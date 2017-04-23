@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Website Title & Description for Search Engine purposes -->
+<title></title>
+<meta name="description" content="">
+
+<!-- Mobile viewport optimized -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Bootstrap CSS -->
+<link href="D:\721721\JAVA_Part2\bootstrap\css\bootstrap.min.css"
+	rel="stylesheet">
+<link href="D:\721721\JAVA_Part2\includes/css/bootstrap-glyphicons.css"
+	rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="D:\721721\JAVA_Part2\includes/css/styles.css"
+	rel="stylesheet">
+
+<!-- Include Modernizr in the head, before any other Javascript -->
+<script src="D:\721721\JAVA_Part2\includes/js/modernizr-2.6.2.min.js"></script>
+
+<script src="D:\721721\JAVA_Part2\includes\js\jquery-1.8.2.min.js"></script>
+<script src="D:\721721\JAVA_Part2\includes\js\angular.min.js"></script>
+
+
+<!-- custom CSS -->
+
+<style type="text/css">
+#pretag {
+	font-size: 16px;
+	background-color: #fff7f1;
+	color: #b3446c;
+}
+</style>
+
+
+
+</head>
+
+
+
+<body ng-app="">
+
+	<div class="container" id="main">
+<div data-include="D:/721721/JAVA_Part2/WebContent/hello.html"></div>
+<div ng-include="'D:\721721\JAVA_Part2\pages\constructors\hello.html'"></div>
+
+
+	</div>
+	<!-- end of main container -->
+
+
+	
+	
+	
+
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="D:\721721\JAVA_Part2\includes/js/jquery-1.8.2.min.js"><\/script>')
+	</script>
+
+	<!-- Bootstrap JS -->
+	<script src="D:\721721\JAVA_Part2\bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="D:\721721\JAVA_Part2\includes/js/script.js"></script>
+</body>
+</html>

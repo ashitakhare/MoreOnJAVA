@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Website Title & Description for Search Engine purposes -->
+<title></title>
+<meta name="description" content="">
+
+<!-- Mobile viewport optimized -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Bootstrap CSS -->
+<link href="../../bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="../../includes/css/bootstrap-glyphicons.css"
+	rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../../includes/css/styles.css"
+	rel="stylesheet">
+
+<!-- Include Modernizr in the head, before any other Javascript -->
+<script src="../../includes/js/modernizr-2.6.2.min.js"></script>
+
+<script src="../../includes/js/jquery-1.8.2.min.js"></script>
+
+
+
+<!-- custom CSS -->
+
+<style type="text/css">
+#pretag {
+	font-size: 16px;
+	background-color: #fff7f1;
+	color: #b3446c;
+}
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+	<div class="container" id="main">
+
+
+		<div class="navbar navbar-fixed-top ">
+
+			<div class="container">
+				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				<button class="navbar-toggle"
+					data-target=".navbar-responsive-collapse" data-toggle="collapse"
+					type="button">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand navbar-left"
+					href="index.html"><img alt=""
+					src="images/java_logo.png"> </a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav ">
+						<li class="dropdown; active"><a href="#"
+							class="dropdown-toggle" data-toggle="dropdown">OOP Concepts <strong
+								class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="./pages/classes/class.html">Classes</a></li>
+
+								<li><a href="./pages/objects.html">Objects</a></li>
+								<li><a
+									href="./pages/constructors/constructor.html">Constructors</a></li>
+								<li><a href="#">Inheritance</a></li>
+								<li><a href="#">Command Line Arguments</a></li>
+
+
+
+							</ul></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown">Access Specifiers <strong
+								class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="">Access Specifiers</a></li>
+
+								<li><a href="">Access Modifiers</a></li>
+
+							</ul></li>
+						<li><a href="">Arrays</a></li>
+						<li><a href="#">Strings</a></li>
+
+
+						<li><a href="#">Packages</a></li>
+
+						<li><a href="#">Interfaces</a></li>
+
+
+
+					</ul>
+					<!-- end of navbar ul -->
+
+				</div>
+				<!-- end of nav-collapse -->
+			</div>
+
+		</div>
+		<!-- end of navbar -->
+		<br> <br> <br> <br> <br> <br>
+		<div class="row">
+			<div id="sidebarIndex" class="col-sm-3"
+				style="background-color: #FFF7F8; color: #b3446c;">
+				<h3 class="widgettitle">Table of Content</h3>
+				<ul class="tag-post-list"
+					style="font-size: 17px; list-style: none; margin-left: -40px;">
+					<li style="line-height: 35px; border-bottom: 1px solid #DDDDDD;"><a
+						style="color: &lt;/div&gt;"
+						href="class.html">OOPs
+							concept</a></li>
+
+
+					<li style="line-height: 35px; border-bottom: 1px solid #DDDDDD;"><a
+						style="color: &lt;/div&gt;"
+						href="classDeclare.html">Class
+							Declaration</a></li>
+					<li style="line-height: 35px; border-bottom: 1px solid #DDDDDD;"
+						id="posts-by-tag-item-6442"><a style="color: &lt;/div&gt;"
+						href="multiClass.html">Multi-class
+							applications and main()</a></li>
+					<li style="line-height: 35px; border-bottom: 1px solid #DDDDDD;"
+						id="posts-by-tag-item-6442"><a style="color: &lt;/div&gt;"
+						href="multiMain.html">Declaring
+							more than one main() method:</a></li>
+					<li style="line-height: 35px; border-bottom: 1px solid #DDDDDD;"
+						id="posts-by-tag-item-6442">Inside a Class
+						<ul class="tag-post-list"
+							style="font-size: 17px; list-style: none; margin-left: -25px;">
+							<li style="line-height: 35px; border-bottom: 1px solid #DDDDDD;">-<a
+								style="color: &lt;/div&gt;"
+								href="fields.html">
+									Fields: Describing attributes</a>
+							</li>
+							<li style="line-height: 35px;">-<a
+								style="color: &lt;/div&gt;"
+								href="methods.html">
+									Methods: Describing behaviors</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- END OF COL SM 3 -->
+
+
+			<!-- START OF COL 9 -->
+			<div class="col-sm-9 articleMain">
+				<div class="post-content">
+					<h2 class="entry-title" align="center">Fields: Describing attributes</h2>
+					<span class="vcard" style="display: none;"><span class="fn"></span></span>
+					<div style="font-family: Verdana; font-size: 17px;">
+						<br>
+						<strong>A
+						Java field is a variable inside a class.</strong>
+					<p>For instance, in a class representing an employee, the
+						Employee class might contain the following fields:</p>
+					<ul>
+						<li>empName</li>
+						<li>DOB</li>
+						<li>Salary</li>
+					</ul> The corresponding Java class could be defined like this: <pre
+						id="pretag">
+public class <b>Employee</b> {
+  String  name     ;
+  String  position ;
+  int     salary   ;
+  Date    hiredDate;
+}</pre>
+					<p>
+						<strong>Field Declaration Syntax</strong>
+					</p> <pre id="pretag">
+						<center>[access_modifier] [static] [final] type name [= initial value] ;</center>
+					</pre>
+					<ul>
+						<li>The square brackets <code>[ ]</code> around some of the
+							keywords mean that this option is <i>optional</i>. Only type and
+							name are required.
+						</li>
+						<li>First an<a href="accessMod.html"><button
+									type="button" class="btn btn-link">access modifier</button></a> can
+							be declared for a Java field. The access modifier determines
+							which object classes that can access the field. In the Employee
+							example above there were no access modifiers.(<i>**Access
+								Modifiers will be Discussed Later.</i>)
+						</li>
+						<li>Second, a data type for the Java field must be assigned.
+							In the Employee example above the data types String, int and Date
+							were used.</li>
+						<li>Third, the Java field can be declared static. In Java,
+							static fields belongs to the class, not instances of the class.
+							Thus, all instances of any class will access the same static
+							field variable. A non-static field value can be different for
+							every object (instance) of a class.(<i>**Static will be
+								Discussed Later.</i>)
+						</li>
+						<li>Fourth, the Java field can be declared final or not. A
+							final field cannot have its value changed. A final field must
+							have an initial value assigned to it, and once set, the value
+							cannot be changed again. A final field is often also declared
+							static. A field declared static and final is also called a
+							"constant".</li>
+						<li>Fifth, the Java field is given a name. You can choose
+							this name freely, but there are some restrictions on what
+							characters the name can contain.</li>
+						<li>Sixth, you can optionally set an initial value for the
+							field.</li>
+
+					</ul> <!-- end of inner ul --> The following example declares a pair of
+					fields in Book: <pre id="pretag">
+class Book
+{
+   String title;
+   int pubYear; // publication year
+}
+					</pre> The <code>title</code> and <code>pubYear</code> field declarations
+					are identical to the variable declarations." These fields are known
+					as instance fields because each object contains its own copy of
+					them."
+					<p>The title and pubYear fields store values for a specific
+						book.</p>
+
+					</div>
+					<!-- End of Constructor MAin Div -->
+				</div>
+				<!-- end of post content -->
+			</div>
+			<!-- end of col 9 -->
+		</div>
+		<!-- end of row -->
+
+
+
+
+
+	</div>
+	<!-- end of main container -->
+
+
+
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="../../includes/js/jquery-1.8.2.min.js"><\/script>')
+	</script>
+
+	<!-- Bootstrap JS -->
+	<script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="../../includes/js/script.js"></script>
+</body>
+</html>

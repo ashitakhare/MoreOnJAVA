@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Website Title & Description for Search Engine purposes -->
+<title></title>
+<meta name="description" content="">
+
+<!-- Mobile viewport optimized -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Bootstrap CSS -->
+<link href="bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="includes/css/bootstrap-glyphicons.css"
+	rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="includes/css/styles.css"
+	rel="stylesheet">
+
+<!-- Include Modernizr in the head, before any other Javascript -->
+<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container" id="main">
+
+		<div class="navbar navbar-fixed-top ">
+
+			<div class="container">
+				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				<button class="navbar-toggle"
+					data-target=".navbar-responsive-collapse" data-toggle="collapse"
+					type="button">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand navbar-left"
+					href="index.html"><img alt=""
+					src="images/java_logo.png"> </a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav ">
+						<li class="dropdown; active"><a href="#"
+							class="dropdown-toggle" data-toggle="dropdown">OOP Concepts <strong
+								class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="pages/classes/class.html">Classes</a></li>
+
+								<li><a href="pages/objects.html">Objects</a></li>
+								<li><a
+									href="pages/constructors/constructor.html">Constructors</a></li>
+								<li><a href="#">Inheritance</a></li>
+								<li><a href="#">Command Line Arguments</a></li>
+
+
+
+							</ul></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown">Access Specifiers <strong
+								class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="">Access Specifiers</a></li>
+
+								<li><a href="">Access Modifiers</a></li>
+
+							</ul></li>
+						<li><a href="">Arrays</a></li>
+						<li><a href="#">Strings</a></li>
+
+
+						<li><a href="#">Packages</a></li>
+
+						<li><a href="#">Interfaces</a></li>
+
+
+
+					</ul>
+					<!-- end of navbar ul -->
+
+				</div>
+				<!-- end of nav-collapse -->
+			</div>
+
+		</div>
+		<!-- end of navbar -->
+
+
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+
+
+
+				<!-- Visible only on small devices -->
+				<div class="well well-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default"><span
+						class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+				</div>
+				<!-- end well-small -->
+
+				<br> <br> <br>
+				<div class="well">
+					<div class="page-header">
+						<h1>
+							Objects <small>Object determines the behavior of the
+								class.</small>
+						</h1>
+					</div>
+					<!-- end page-header -->
+
+					<p class="lead">
+						Objects are key to understanding object-oriented technology. Look
+						around right now and you'll find many examples of real-world
+						objects: your dog, your desk, your television set, your bicycle.
+						Real-world objects share two characteristics: They all have state
+						and behavior. Dogs have state (name, color, breed, hungry) and
+						behavior (barking, fetching, wagging tail). Bicycles also have
+						state (current gear, current pedal cadence, current speed) and
+						behavior (changing gear, changing pedal cadence, applying brakes).
+						Identifying the state and behavior for real-world objects is a
+						great way to begin thinking in terms of object-oriented
+						programming.<br> <br> Take a minute right now to observe
+						the real-world objects Examples Below
+					</p>
+
+				</div>
+				<!-- end well -->
+
+
+
+				<button type="button" class="btn btn-info btn-lg"
+					data-toggle="modal" data-target="#myModal">Example 1</button>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Example 1</h4>
+							</div>
+							<div class="modal-body">
+								<img alt="No object Image"
+									src="images/OBJECTS.PNG">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="btn btn-warning btn-lg"
+					data-toggle="modal" data-target="#myModal2">Example 2</button>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal2" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Example 2</h4>
+							</div>
+							<div class="modal-body">
+								<img alt="No object Image"
+									src="images/object2.PNG">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end of modal -->
+			</div>
+			<!-- end col-12 -->
+		</div>
+		<!-- end bigCallout -->
+
+		<br>
+
+		<p style="font-family: Calibri;" class="lead">So far, what we have
+			seen is a class. Class is as we discussed, is a data type. Now Let us
+			Discuss About OBJECTS:</p>
+		<ul style="font-family: Calibri;" class="lead">
+
+			<li>We don�t store values or data in a data type, <strong>
+					we store data in objects!</strong></li>
+			<li>The Object Class is the super class for all classes in Java.</li>
+			<li>Memory is allocated when we create an object. We create an
+				object using the <b> new</b> keyword.
+			</li>
+			<li>When we create an object using the new keyword, a chunk of
+				memory is allocated and a reference to that chunk of memory is
+				returned.</li>
+			<li>How big is this chunk of memory. Well, let�s just say that
+				it is big enough to accommodate all the attributes of the class.
+				Before we go to the syntax of creating an object, let�s look at a
+				couple of definitions.<br>
+				<ol>
+					<li><strong>Object Reference</strong>- It is a variable which
+						holds the address or reference to the object.We access the
+						elements of an object via the Object Reference. We use the
+						de-referencing, or dot operator �.� to access the members of the
+						object. An Object Reference has a data type. It has the same data
+						type as the class whose object we want the object reference to
+						point to.</li>
+					<li><strong>Object</strong>- It is one large chunk of memory
+						dynamically allocated by using the new keyword. It is the live
+						instance of a class. It has memory for variables in it. They are
+						the variables which are specified in the class definition. Object
+						is a reference type. So they must be accessed by a pointer sort of
+						thing, which in Java is an Object Reference.</li>
+
+				</ol>
+
+			</li>
+		</ul>
+
+		<h3>Creating Objects</h3>
+		<div style="font-family: Calibri;" class="lead">
+			<p>Creation of Object involves two steps �</p>
+			<ol>
+				<li>Declaration of Variable of Type Class</li>
+				<li>Allocation and Assigning Object to variable of class Type</li>
+
+			</ol>
+			<br>
+			<h4>Step 1: Declaration of Variable of Type Class</h4>
+			Previously, you learned that to declare a variable, you write:<br>
+			<i>dataType varName;</i> <br> This notifies the compiler that
+			you will use <i>varName</i> to refer to data whose type is <i>dataType</i>.
+			With a primitive variable, this declaration also reserves the proper
+			amount of memory for the variable.<br> Let us see this with an
+			Example:
+			<center>
+				<h3>Rectangle myRect1;</h3>
+			</center>
+			<img alt="" src="images/declaring object.PNG">This
+			is how it will look <br> Since we have not assigned value to <i>myRect</i>,
+			so it will contain value NULL. let's see what above line does-
+			<ol start="a.">
+				<li>Above Declaration will just declare a variable of
+					class(Rectangle) type.</li>
+				<li>Declared Variable is able to store the reference to an
+					object of Rectangle Type.</li>
+				<li>As we have not created any object of class Rectangle and we
+					haven�t assigned any reference to myrect1 , it will be initialized
+					with null.</li>
+			</ol>
+			<br>
+			<h4>Step 2: Allocation and Assigning Object to variable of class
+				Type</h4>
+			<br>
+			<center>
+				<h3>
+					myRect1 = <strong>new</strong> Rectangle(); <strong>OR</strong>
+				</h3>
+				<h3>
+					Rectangle myRect1 = <strong>new</strong> Rectangle();
+				</h3>
+				<br>
+
+			</center>
+			<img alt="" src="images/assignobjects1.PNG">
+			This How it will Look. let's see what above lines does-<br>
+			<ol>
+				<li>Above Statement will create physical copy of an object.</li>
+				<li>This Physical Copy is then assigned to an variable of Type
+					Class i.e myrect1.</li>
+				<li>Note : myrect1 holds an instance of an object not actual
+					object. Actual Object is created elsewhere and instance is assigned
+					to myrect1.</li>
+			</ol>
+			So, The object reference points to the object. In the above diagram,
+			the object is having only 2 variables, that is because we had 2
+			variables in the class definition. If you change that, the object
+			also changes. Class is the blueprint and Object is the live
+			occurrence. Any changes made to the blueprint is reflected in the
+			model. <br> No, Let us see how can we access the data through
+			objects: <br>
+			<div class="panel">
+				public class Rectangle {<br> public int width = 0;<br>
+				public int height = 0;<br> public int show(){<br>
+				System.out.println("This is a Method");<br> }
+
+				<h4>/*Now to access width, height and show() you need object.*/</h4>
+				class Demo{<br> public static void main(String[] args) {<br>
+				Rectangle myRect1 = new Rectangle(); // <i>Creating and
+					assigning object</i><br>
+				<br> <I>/*Now using <strong>myRect1</strong> you can access
+					data as well as method of Rectangle classusing '.' operator.*/
+				</I><br>
+				<br> <strong>myRect1.width=10;</strong> <i>//this will
+					assign value 10 to width<br>
+				</i> System.out.println(myRect1.width); <i>//this will display value
+					10 of width<br>
+				</i> <strong>myRect1.height=10;</strong> <i>//this will assign value
+					20 to width<br>
+				</i> System.out.println(myRect1.height); <i>//this will display
+					value 20 of height<br>
+				</i> <strong>myRect1.show();</strong> <i>//this will call the method
+					show() and will display output "This is a Method"</i><br> }}<br>
+				click to see Output
+				<button type="button" class="btn btn-info" data-toggle="modal"
+					data-target="#output">Output</button>
+				<!-- Modal -->
+				<div class="modal fade" id="output" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Output</h4>
+							</div>
+							<div class="modal-body">
+								<img alt="No object Image"
+									src="images/objectexample.PNG">
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			Click Below Button to see an Example on Objects.<br>
+			<button type="button" class="btn btn-danger" data-toggle="modal"
+				data-target="#ex3">Example for Object</button>
+			<!-- Modal -->
+			<div class="modal fade" id="ex3" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Example for Object</h4>
+						</div>
+						<div class="modal-body">
+							<img alt="No object Image"
+								src="images/objexample.PNG">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+	<!-- end of main container -->
+
+
+
+
+
+
+
+
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+	</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+</body>
+
+</html>
